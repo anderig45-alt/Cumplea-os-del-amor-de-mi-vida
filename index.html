@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feliz Cumpleaños ❤️</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Audio -->
+<audio id="bg-audio" src="cancion.mp3" preload="auto"></audio>
+
+<!-- INTRO -->
+<div id="intro">
+    <div id="intro-text">YA SON LAS 12 DEL 17 DE NOVIEMBRE, AMOR 💕</div>
+    <div id="gift">🎁</div>
+</div>
+
+<!-- SORPRESA -->
+<div id="sorpresa" class="hidden">
+    <div id="floating-heart">❤️</div>
+    <div id="message">FELIZ CUMPLEAÑOS, MI NEGRA 💛<br>FELICES 19 🎂 TENGO ALGO MÁS PARA TI…</div>
+    <img id="ramo" src="ramo.png" class="hidden" alt="Ramo de flores">
+
+    <!-- 🔥 AGREGADO: Centrar botón -->
+    <div id="center-view">
+        <button id="btn-view" style="display:none">Ver lo que tengo para ti 💌</button>
+    </div>
+</div>
+
+<!-- MENSAJE FINAL -->
+<div id="mensaje-final" class="hidden">
+
+    <!-- Contenedor general centrado -->
+    <div id="contenedor-mensaje">
+
+        <div id="typewriter"></div>
+
+        <!-- Fotos izquierda -->
+        <div class="photo-column" id="left-photos"></div>
+
+        <!-- Fotos derecha -->
+        <div class="photo-column" id="right-photos"></div>
+
+    </div>
+
+    <!-- Botones abajo centrados -->
+    <div id="buttons">
+        <button id="btn-easter" style="display:none">Haz clic aquí si me amas 💘</button>
+        <button id="btn-photo-words" style="display:none">FELIZ CUMPLEAÑOS MI AMOR — PRESIONA AQUÍ</button>
+    </div>
+
+    <!-- Mensaje del botón “si me amas” -->
+    <div id="easter-msg" class="hidden"></div>
+
+</div>
+
+<!-- EFECTOS -->
+<div id="petals"></div>
+<div id="hearts"></div>
+<div id="confetti"></div>
+
+<!-- OVERLAY FOTO -->
+<div id="overlay-photo" class="hidden">
+    <span id="overlay-close">✖</span>
+    <img id="overlay-img" src="">
+    <button id="overlay-back">Volver</button>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
